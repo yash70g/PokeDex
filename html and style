@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="poke.ico" >
+    <title>PokeDex</title>
+</head>
+<style>
+    body {
+        width: auto;
+        height: 300px;
+        background-image: url("https://imgs.search.brave.com/T57qcjUFbmPVHXVAvRK8Xb8Rlb6qaOSN4Ithv3LcYFE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE3/MDMwMjM2ODkxNjAt/ZWE5NGIwYmM3ZGQz/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRSOGZI/QnZhMlZpWVd4c2ZH/VnVmREI4ZkRCOGZI/d3c");
+        background-size: cover;
+    }
+
+    .request {
+        padding: 20px;
+        align-content: space-around;
+        justify-content: center;
+    }
+
+    .data {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 700;
+        border: 2px solid rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.727);
+        color: white;
+        border: margin 2px;
+        margin: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-content: space-around;
+        justify-content: center;
+        max-width: fit-content;
+    }
+
+    th,
+    td {
+        border: 2px solid rgb(255, 255, 255);
+
+    }
+
+    #pokename {
+        color: white;
+        font-weight: 800;
+        background-color: rgba(0, 0, 0, 0.893);
+    }
+</style>
+
+<body>
+    <div class="request">
+        <input id="pokename" type="text" placeholder="Enter Pokemon Name" onkeyup="getdata(this.value.toLowerCase())">
+    </div>
+
+  <script src="pokedex.js"></script>
+</body>
+
+</html>
